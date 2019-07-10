@@ -1,0 +1,30 @@
+{
+  "name": "urldiff",
+  "version": "0.0.0",
+  "description": "URL difference processor, sorter and filter",
+  "main": "source/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perry-mitchell/urldiff.git"
+  },
+  "keywords": [
+    "url",
+    "diff",
+    "sort",
+    "filter",
+    "compare",
+    "match"
+  ],
+  "author": "Perry Mitchell <perry@perrymitchell.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/perry-mitchell/urldiff/issues"
+  },
+  "homepage": "https://github.com/perry-mitchell/urldiff#readme",
+  "dependencies": {
+    "fast-levenshtein": "^2.0.6"
+  }
+}
