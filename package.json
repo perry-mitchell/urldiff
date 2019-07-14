@@ -4,6 +4,7 @@
   "description": "URL difference processor, sorter and filter",
   "main": "source/index.js",
   "scripts": {
+    "docs": "jsdoc2md source/*.js > API.md",
     "test": "npm run test:specs",
     "test:specs": "nyc mocha -r test/index.js test/specs/**.spec.js"
   },
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "jsdoc-to-markdown": "^5.0.0",
     "mocha": "^6.1.4",
     "nyc": "^14.1.1",
     "sinon": "^7.3.2"
