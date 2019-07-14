@@ -1,7 +1,7 @@
 # urldiff
 > URL difference processor, sorter and filter
 
-[![Build Status](https://travis-ci.org/perry-mitchell/urldiff.svg?branch=master)](https://travis-ci.org/perry-mitchell/urldiff)
+[![Build Status](https://travis-ci.org/perry-mitchell/urldiff.svg?branch=master)](https://travis-ci.org/perry-mitchell/urldiff) [![npm version](https://badge.fury.io/js/urldiff.svg)](https://www.npmjs.com/package/urldiff)
 
 ## About
 
