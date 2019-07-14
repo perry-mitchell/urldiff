@@ -33,9 +33,6 @@ function parseURLParts(url) {
         port = portStr || port;
         exactOnly = host === "localhost";
     }
-    if (!host) {
-        throw new Error(`Failed extracting host from URL: ${url}`);
-    }
     return {
         host,
         port,

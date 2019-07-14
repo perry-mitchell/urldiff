@@ -4,7 +4,8 @@
   "description": "URL difference processor, sorter and filter",
   "main": "source/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:specs",
+    "test:specs": "nyc mocha -r test/index.js test/specs/**.spec.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,11 @@
   "homepage": "https://github.com/perry-mitchell/urldiff#readme",
   "dependencies": {
     "fast-levenshtein": "^2.0.6"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
+    "sinon": "^7.3.2"
   }
 }
