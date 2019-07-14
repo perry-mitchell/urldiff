@@ -2,9 +2,9 @@ const { parseURLParts } = require("./parse.js");
 const { calculateSimilarityScore } = require("./distance.js");
 
 const HOST_WEIGHT = 1;
-const PATH_WEIGHT = 0.8;
-const PORT_WEIGHT = 0.6;
-const PROTOCOL_WEIGHT = 0.2;
+const PATH_WEIGHT = 0.5;
+const PORT_WEIGHT = 0.2;
+const PROTOCOL_WEIGHT = 0.1;
 
 function calcuateURLScore(primaryURL, secondaryURL) {
     const primary = typeof primaryURL === "string" ? parseURLParts(primaryURL) : primaryURL;
