@@ -1,6 +1,6 @@
 {
   "name": "urldiff",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "URL difference processor, sorter and filter",
   "main": "source/index.js",
   "scripts": {
@@ -8,6 +8,11 @@
     "test": "npm run test:specs",
     "test:specs": "nyc mocha -r test/index.js test/specs/**.spec.js"
   },
+  "files": [
+    "source/**/*.js",
+    "API.md",
+    "CHANGELOG.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/perry-mitchell/urldiff.git"
