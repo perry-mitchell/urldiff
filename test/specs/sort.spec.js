@@ -18,5 +18,33 @@ describe("sort", function() {
                 URL_B
             ]);
         });
+
+        it("filters low-score URLs", function() {
+            const sorted = sortByURL("http://host.some-page.com/test-page", [
+                URL_B,
+                URL_A,
+                URL_C
+            ], 0.25);
+            expect(sorted).to.deep.equal([
+                URL_A,
+                URL_C
+            ]);
+        });
+
+        it("sorts objects", function() {
+            const objA = { url: URL_A };
+            const objB = { url: URL_B };
+            const objC = { url: URL_C };
+            const sorted = sortByURL("http://host.some-page.com", [
+                objA,
+                objB,
+                objC
+            ], 0, o => o.url);
+            expect(sorted).to.deep.equal([
+                objA,
+                objC,
+                objB
+            ]);
+        });
     });
 });
