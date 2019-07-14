@@ -6,6 +6,13 @@ const PATH_WEIGHT = 0.5;
 const PORT_WEIGHT = 0.2;
 const PROTOCOL_WEIGHT = 0.1;
 
+/**
+ * Calculate the likeness score of 2 URLs
+ * @param {String} primaryURL The reference URL
+ * @param {String} secondaryURL URL to compare
+ * @returns {Number} The likeness score (0-1)
+ * @memberof module:URLDiff
+ */
 function calcuateURLScore(primaryURL, secondaryURL) {
     const primary = typeof primaryURL === "string" ? parseURLParts(primaryURL) : primaryURL;
     const secondary = typeof secondaryURL === "string" ? parseURLParts(secondaryURL) : secondaryURL;
