@@ -56,12 +56,13 @@ function stringContainsSuffix(str, suffix) {
 }
 
 function weightScores(scores) {
-    const totalWeight = scores.reduce((total, item) => total + item.weight);
-    const totalScore = scores.reduce((total, item) => total + (item.weight * item.score));
+    const totalWeight = scores.reduce((total, item) => total + item.weight, 0);
+    const totalScore = scores.reduce((total, item) => total + (item.weight * item.score), 0);
     return totalScore / totalWeight;
 }
 
 module.exports = {
     calcuateURLScore,
-    stringContainsSuffix
+    stringContainsSuffix,
+    weightScores
 };
