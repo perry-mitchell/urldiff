@@ -9,7 +9,7 @@ function sortByURL(referenceURL, arr, minScore = 0, valueGetter = VALUE_GETTER) 
             const url = valueGetter(item) || "";
             const score = urlScores[url] || calcuateURLScore(referenceURL, url);
             urlScores[url] = score;
-            return score > minScore;
+            return score >= minScore;
         })
         .sort((a, b) => {
             const aScore = urlScores[valueGetter(a)];
